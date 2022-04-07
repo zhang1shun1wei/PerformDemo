@@ -29,8 +29,8 @@ public class MTTrafficMonitor {
                 if (trafficStatus.getNextBucket(trafficBucket)) {
                     long txBytes = trafficBucket.getTxBytes();
                     long txPackets = trafficBucket.getTxPackets();
-                    Log.d("zsw11", "open:-->txBytes=" + txBytes);
-                    Log.d("zsw11", "open:-->txPackets=" + txPackets);
+                    Log.d("zsw11", "open:-->txBytes:" + txBytes);
+                    Log.d("zsw11", "open:-->txPackets:" + txPackets);
                     //参考链接：https://www.cnblogs.com/DASOU/p/4205314.html
                 }
                 setOpen(true);

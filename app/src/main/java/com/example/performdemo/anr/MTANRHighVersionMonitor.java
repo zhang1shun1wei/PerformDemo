@@ -32,7 +32,7 @@ public class MTANRHighVersionMonitor implements FrameUpdateLister {
             mCollectCount++;
             if (mCollectCount * mStackCollectPeriod >= mAnrCheckPeriodtime) {
                 String stackStr = traceToString(Looper.getMainLooper().getThread().getStackTrace());
-                Log.d("zsw11", "监测到ANR: run: ---->stackStr" + stackStr);
+                Log.d("zsw11", "监测到ANR: run: ---->stackStr:" + stackStr);
                 stackShowHandler.removeCallbacks(this);
                 mBlockStackTraces.clear();
             } else {

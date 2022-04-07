@@ -17,9 +17,9 @@ public class MTMemoryMonitor {
         public void run() {
             MTMemoryInfo memInfo = getMemoryInfo();
             String size = formatFileSize(memInfo.totalSize);
-            Log.d("zsw11", "totalSize " + size);
-            Log.d("zsw11", "nativeSize" + memInfo.nativeSize);
-            Log.d("zsw11", "vmSize" + memInfo.vmSize);
+            Log.d("zsw11", "totalSize: " + size);
+            Log.d("zsw11", "nativeSize:" + formatFileSize(memInfo.nativeSize));
+            Log.d("zsw11", "vmSize:" + formatFileSize(memInfo.vmSize));
             memoryRefreshHandler.postDelayed(memoryCollectRunnable, MEMORY_COLLECT_PERIOD);
         }
     };
