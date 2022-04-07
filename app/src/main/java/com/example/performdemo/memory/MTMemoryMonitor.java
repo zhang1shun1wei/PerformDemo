@@ -17,7 +17,9 @@ public class MTMemoryMonitor {
         public void run() {
             MTMemoryInfo memInfo = getMemoryInfo();
             String size = formatFileSize(memInfo.totalSize);
-            Log.d("zsw11", "run: " + size);
+            Log.d("zsw11", "totalSize " + size);
+            Log.d("zsw11", "nativeSize" + memInfo.nativeSize);
+            Log.d("zsw11", "vmSize" + memInfo.vmSize);
             memoryRefreshHandler.postDelayed(memoryCollectRunnable, MEMORY_COLLECT_PERIOD);
         }
     };
@@ -42,7 +44,7 @@ public class MTMemoryMonitor {
         return getMemoryInfoInDebug();
     }
 
-    public void open() {
+    public void startMemoryMonitor() {
         mMonitorThread = new HandlerThread("rabbit_memory_monitor_thread");
         mMonitorThread.start();
         memoryRefreshHandler = new Handler(mMonitorThread.getLooper());
@@ -50,7 +52,7 @@ public class MTMemoryMonitor {
 
     }
 
-    public void close() {
+    public void stopMonitor() {
 
     }
 
