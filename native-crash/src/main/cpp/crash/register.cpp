@@ -17,7 +17,7 @@ typedef struct {
     struct sigaction oldact;
 } CrashSignalInfo;
 
-//支持的 native crash 捕获类型
+//支持的 native crash 捕获类型 https://www.jianshu.com/p/f4703f77d75c
 static CrashSignalInfo support_crash_infos[] =
         {
                 {.signum = SIGABRT},
