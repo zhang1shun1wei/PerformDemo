@@ -1,2 +1,4 @@
 rootProject.name='PerformDemo'
 include ':app'
+include ':mylibrary'
+include ':native-crash'
