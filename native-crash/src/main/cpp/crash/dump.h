@@ -3,8 +3,8 @@
 #include "errno.h"
 #include "signal.h"
 
-#ifndef RABBIT_CLIENT_UTLIS_H
-#define RABBIT_CLIENT_UTLIS_H
+#ifndef CLIENT_UTLIS_H
+#define CLIENT_UTLIS_H
 
 static char *JAVA_CRASH_CALLBACK_METHOD_NAME = const_cast<char *>("onCaptureNativeCrash");
 static char *JAVA_CRASH_CALLBACK_METHOD_SIGNATURE = const_cast<char *>("()V");
@@ -28,4 +28,4 @@ typedef struct {
 }
 #endif
 
-#endif //RABBIT_CLIENT_UTLIS_H
+#endif

@@ -3,6 +3,7 @@ package com.example.performdemo;
 import android.app.Application;
 
 import com.demo.native_crash.MTNativeCrashCaptor;
+import com.example.native_jvmti.MTJvmTi;
 import com.example.performdemo.anr.MTANRHighVersionMonitor;
 import com.example.performdemo.memory.MTMemoryMonitor;
 import com.example.performdemo.traffic.MTTrafficMonitor;
@@ -12,6 +13,7 @@ public class MyApplication extends Application {
     private MTMemoryMonitor mMTMemoryMonitor;
     private MTTrafficMonitor mMTTrafficMonitor;
     private MTNativeCrashCaptor mtNativeCrashCaptor;
+    private MTJvmTi mtJvmTi;
 
     @Override
     public void onCreate() {

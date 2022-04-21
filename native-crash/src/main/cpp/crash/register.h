@@ -1,5 +1,5 @@
-#ifndef RABBIT_CLIENT_REGISTER_H
-#define RABBIT_CLIENT_REGISTER_H
+#ifndef CLIENT_REGISTER_H
+#define CLIENT_REGISTER_H
 
 #include <jni.h>
 

@@ -1,5 +1,5 @@
-#ifndef RABBIT_CLIENT_UNWIND_H
-#define RABBIT_CLIENT_UNWIND_H
+#ifndef CLIENT_UNWIND_H
+#define CLIENT_UNWIND_H
 
 #include <jni.h>
 #include "signal.h"
